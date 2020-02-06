@@ -19,7 +19,6 @@ void fillArray(ifstream& file, int**& matrix, int n) {
 }
 
 void outputArray(int**& matrix, int n) {
-    outFile << "Matrix: " << "\n";
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < n; j++) {
             outFile << matrix[i][j] << " ";
@@ -41,14 +40,11 @@ void printArray(int**& matrix, int n) {
 
 //Prints the S values used in the Strassen Method
 void printSValues(int s[], int n) {
-    outFile << "S values: " << "\n";
     cout << "S values: " << endl;
     for (int i = 0; i < n; i++) {   
         cout << "S" << (i + 1) << ": " << s[i] << endl;
-        outFile << "S" << (i + 1) << ": " << s[i] << "\n";
     }
     cout << endl;
-    outFile << "\n";
 }
 
 //Allocates memory for a 2D array to be used
